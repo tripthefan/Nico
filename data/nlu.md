@@ -185,7 +185,7 @@
 - what does julie do
 - what is julie
 
-## intent:message_not_understood
+## intent:out_of_scope
 - this makes no sense
 
 ## intent:distribution_methods

@@ -2,21 +2,31 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
-- goodbye
+- distribution_methods:
+    triggers: utter_distribution_methods
+- greet:
+    triggers: utter_greet
+- goodbye:
+    triggers: utter_goodbye
 - confirm
 - deny
 - chitchat_name_user
 - chitchat_name_bot
 - chitchat_apology
 - chitchat_thanks
-- chitchat_insult
-- chitchat_weather
-- chitchat_date
-- chitchat_inquiry_bot
+- chitchat_insult:
+    triggers: utter_clapback
+- chitchat_weather:
+    triggers: utter_weather
+- chitchat_date:
+    triggers: utter_date
+- chitchat_inquiry_bot:
+    triggers: utter_iamabot
 - chitchat_inquiry_human
-- chitchat_joke
-- chitchat_meme
+- chitchat_joke:
+    triggers: utter_joke
+- chitchat_meme:
+    triggers: utter_meme
 - inform_artistmanagement_role
 - inform_artistmanagement_exec
 - inform_bookingagent_role
@@ -25,15 +35,23 @@ intents:
 - inform_recordlabel_exec
 - inform_publishco_role
 - inform_publishco_exec
-- causes_c19
-- causes_blm
-- ttf_services
-- ttf_roster
-- ttf_levi
-- ttf_trin
-- ttf_sam
-- ttf_julie
-- message_not_understood
+- causes_c19:
+    triggers: utter_causes_c19
+- causes_blm:
+    triggers: utter_causes_blm
+- ttf_services:
+    triggers: utter_ttf_services
+- ttf_roster:
+    triggers: utter_ttf_roster
+- ttf_levi:
+    triggers: utter_ttf_levi
+- ttf_trin:
+    triggers: utter_ttf_trin
+- ttf_sam:
+    triggers: utter_ttf_sam
+- ttf_julie:
+    triggers: utter_ttf_julie
+- out_of_scope
 responses:
   utter_greet:
   - text: Hey! What can I help ya with today?

@@ -16,11 +16,6 @@
 * inform_recordlabel_role
     - utter_recordlabel_role
 
-## artist management role
-
-* inform_artistmanagement_role
-    - utter_artistmanagement_role
-
 ## publishing co role
 
 * inform_publishco_role
@@ -52,5 +47,10 @@
     - utter_weather
 
 ## distribution methods
+* distribution_methods
+    - utter_distribution_methods
+
+## Story from conversation with edcc415275e04adb812bf740857a647a on July 12th 2020
+
 * distribution_methods
     - utter_distribution_methods
