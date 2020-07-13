@@ -187,3 +187,7 @@
 
 ## intent:message_not_understood
 - this makes no sense
+
+## intent:distribution_methods
+- how do i distribute my music
+- Hi! How do I digitally distribute my record?
