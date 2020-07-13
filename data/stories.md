@@ -11,16 +11,6 @@
 * greet
     - utter_greet
 
-## record label role
-
-* inform_recordlabel_role
-    - utter_recordlabel_role
-
-## publishing co role
-
-* inform_publishco_role
-    - utter_publishco_role
-
 ## levi
 
 * ttf_levi
@@ -45,12 +35,3 @@
 
 * chitchat_weather
     - utter_weather
-
-## distribution methods
-* distribution_methods
-    - utter_distribution_methods
-
-## Story from conversation with edcc415275e04adb812bf740857a647a on July 12th 2020
-
-* distribution_methods
-    - utter_distribution_methods
