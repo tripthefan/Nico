@@ -5,12 +5,16 @@
 - good morning
 - good evening
 - hey there
+- Hello
+- No come back
+- No, don’t say goodbye :(
 
 ## intent:goodbye
 - bye
 - goodbye
 - see you around
 - see you later
+- Shut your face
 
 ## intent:confirm
 - yes
@@ -26,6 +30,8 @@
 - don't like that
 - no way
 - not really
+- NO STOP
+- it doesn’t matter.
 
 ## intent:chitchat_name_user
 - what is my name
@@ -36,6 +42,7 @@
 - what is your name
 - do you have a name
 - what do i call you
+- Ok, but who are you?
 
 ## intent:chitchat_apology
 - im sorry
@@ -46,19 +53,22 @@
 - thank you
 - thanks
 - i appreciate it
+- oh great thanks
 
 ## intent:chitchat_insult
 - stupid bot
 - ur dumb
 - you're useless
+- you are dumb
 
 ## intent:chitchat_weather
 - what is the weather
 - how is the weather outside
 - is it going to rain
 - is it going to be stormy
+- how is the weather
 
-## intent: chitchat_date
+## intent:chitchat_date
 - what is today's date
 - what day is it
 - is today monday
@@ -66,7 +76,7 @@
 ## intent:chitchat_inquiry_bot
 - are you a bot
 - are you a person
-- am I talking to a bot 
+- am I talking to a bot
 - am I talking to a human
 
 ## intent:chitchat_inquiry_human
@@ -90,6 +100,8 @@
 - what is an artist manager
 - what is an artist manager for
 - why would i need an artist manager
+- what is artist management?
+- what is an artist managemer
 
 ## intent:inform_artistmanagement_exec
 - who is a famous artist manager
@@ -112,6 +124,9 @@
 - what is a record label
 - what is a record labelfor
 - why would i need a record label
+- what is a major record label?
+- What is an independent record label?
+- what is a record label?
 
 ## intent:inform_recordlabel_exec
 - what is a famous record label
@@ -123,6 +138,7 @@
 - what is a publishing co
 - what is a publisher for
 - why would i need a publisher
+- what is a music publisher
 
 ## intent:inform_publishco_exec
 - what is a famous publishing co
@@ -152,6 +168,7 @@
 - who is levi
 - what does levi do
 - what is levi
+- Who is Levi?
 
 ## intent:ttf_trin
 - who is trinity
@@ -167,3 +184,6 @@
 - who is julie
 - what does julie do
 - what is julie
+
+## intent:message_not_understood
+- this makes no sense

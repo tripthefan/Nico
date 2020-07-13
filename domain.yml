@@ -1,141 +1,180 @@
-intents:
-  - greet
-  - goodbye
-  - confirm
-  - deny
-
-  - chitchat_name_user
-  - chitchat_name_bot
-  - chitchat_apology
-  - chitchat_thanks
-  - chitchat_insult
-  - chitchat_weather
-  - chitchat_date
-  - chitchat_inquiry_bot
-  - chitchat_inquiry_human
-  - chitchat_joke
-  - chitchat_meme
-
-  - inform_artistmanagement_role
-  - inform_artistmanagement_exec
-  - inform_bookingagent_role
-  - inform_bookingagent_exec
-  - inform_recordlabel_role
-  - inform_recordlabel_exec
-  - inform_publishco_role
-  - inform_publishco_exec
-
-  - causes_c19
-  - causes_blm
-
-  - ttf_services
-  - ttf_roster
-  - ttf_levi
-  - ttf_trin
-  - ttf_sam
-  - ttf_julie
-  
-
-responses:
-  utter_greet:
-  - text: "Hey! What can I help ya with today?"
-
-  utter_goodbye:
-  - text: "Buhbye!"
-  
-  utter_confirm:
-  - text: "For sure!"
-  
-  utter_deny:
-  - text: "No, I'm sorry"
-  - text: "not today, cap"
-  
-  utter_apology:
-  - text: "I'm sorry"
-  
-  utter_thanks:
-  - text: "Thank you!"
-  
-  utter_welcome:
-  - text: "Of, course! anytime"
-  
-  utter_clapback:
-  - text: "You're really spending your time trolling a non-physical, digital entity? go off I guess"
-  
-  utter_weather:
-  - text: "haha I'm inside a server, idk what the outside world is gonna feel like"
-  - text: "I might be in the cloud but that doesn't mean physically lol"
-  - text: "I don't know about irl, but in my cloud things seem to be a breeze"
-  
-  utter_date:
-  - text: "I mean, I guess that'd really depend on what part of the world you're in?"
-  
-  utter_iamabot:
-  - text: "I am a bot, but what does that matter?"
-  
-  utter_joke:
-  - text: "No, I'm sorry"
-  
-  utter_meme:
-  - text: "No, I'm sorry"
-  
-  utter_artistmanagement_role:
-  - text: "Artist managers shape their clients' careers both in a day-to-day and long-term sense. They often help clients book gigs, plan album projects, orchestrate record releases and tours, create marketing and merchandising strategies, get paid for their work, and establish and pursue long-term career goals."
-  
-  utter_artistmanagement_exec:
-  - text: "Scooter Braun"
-  - text: "Irving Azoff"
-  - text: "Pat the Manager"
-  
-  utter_bookingagent_role:
-  - text: "A Booking Agent is responsible for booking live performances including concerts, gigs, tours and radio and TV performances for artists, bands, DJs, choirs, orchestras and other musical ensembles. They are responsible for developing the musicians' or artists' career with regard to their live performance."
-  
-  utter_bookingagent_exec:
-  - text: "Creative Artists Agency"
-  - text: "Panache Bookin"
-  - text: "APA Agency"
-  
-  utter_recordlabel_role:
-  - text: "Record labels are companies that market recorded music and corresponding videos. They engage in a wide range of functions in the music industry, including new artist recruitment and development (known as A&R, which stands for artis and repertoire), music publishing, and copyright enforcement."
-  
-  utter_recordlabel_exec:
-  - text: "Capitol Records"
-  - text: "Warner Music"
-  - text: "Atlantic Records"
-
-  
-  utter_publishco_role:
-  - text: "A music publisher or publishing company is responsible for ensuring the songwriters and composers receive payment when their compositions are used commercially. They also secure commissions for music and promote existing compositions to recording artists, film and television."
-  
-  utter_publishco_exec:
-  - text: "Warner-Chapel"
-  - text: "Universal Music Publishing"
-  
-  utter_causes_c19:
-  - text: "COVID-19? You talkin' Corona (not the drank)? I don't know the stats, but here are some tips to keep ya self healthy: "
-  
-  utter_causes_blm:
-  - text: "I think the only way we're going to overcome racism is through open communication and contiued education. You can find some resources here:"
-
-  utter_ttf_services:
-  - text: "The Trip The Fan crew can do merch stock photography, graphic design, website design, snapchat filters, and ads across most platforms!"
-  
-  utter_ttf_roster:
-  - text: "Right now trip The Fan doesn't have anyone officially signed on their roster, but they are helping random artists they like across Oklahoma."
-  
-  utter_ttf_levi:
-  - text: "Levi is Trip the Fan's founder. He's a ramen and Wes Anderson enthusiast who spends countless hours staring at his phone and computer screens. When he's not working on projects for the artists on his roster (a.k.a. getting sushi and talking about merchandise), you can find him making a cup, or three, of tea (probably oolong). Levi enjoys taking artsy photos, but cannot stand to have his photo taken. On occasion he thinks he can play violin and piano (we don't want to hurt his feelings and tell him he's not good)."
-  
-  utter_ttf_trin:
-  - text: "Trinity is a partner at Trip the Fan. She loves going on walks and climbing, but the real kind, out in the woods and stuff. To prepare for all that activity, she loves to eat a ton of pasta (preferably chicken alfredo). Just kidding, she probably eats all that pasta while she’s watching her fantasy shows (ya know, dragons and whatnot). Trinity is also the social media and branding consultant and content creator queen, maker of the pretty things. She’s an avid consumer of the pretty things as well, often found sitting down to drink a London fog while looking at art and reading poetry. How hipster of her."
-  
-  utter_ttf_sam:
-  - text: "Photographies his game, Sam’s his name, he currently is managing one band and is looking to make big moves in the future. Sam is the movie fanatic of Trip the Fan, his love of classic film making and all things old has fueled his passion for the arts. (such as music and stuff.) Born in Colorado and stripped from the mountains at the ripe age of one, he is seeking safe passage back to his mountainous home. He enjoys casual conversations about the many conspiracy theories that populate the internet and despises talking about the weather. Most nights you can find Sam Chillin like a villain watching his Candian hick shows."
-  
-  utter_ttf_julie:
-  - text: "Julie is an artist manager at Trip the Fan. Born and raised in Dallas, Texas. She loves any and anything Dallas related. In her free time (or what little free time she does have), you can find Julie watching the Dallas Mavericks, Dallas Cowboys, or the Oklahoma Sooners. She cannot start her day without a Dr. Pepper (we get it, you’re from Texas) in hand. She has a heart for building relationships with artists before tackling the business side. She loves people (odd right?). Julie has an associates in music business and is working towards her bachelors degree in commercial music from the University of Central Oklahoma."
-
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- confirm
+- deny
+- chitchat_name_user
+- chitchat_name_bot
+- chitchat_apology
+- chitchat_thanks
+- chitchat_insult
+- chitchat_weather
+- chitchat_date
+- chitchat_inquiry_bot
+- chitchat_inquiry_human
+- chitchat_joke
+- chitchat_meme
+- inform_artistmanagement_role
+- inform_artistmanagement_exec
+- inform_bookingagent_role
+- inform_bookingagent_exec
+- inform_recordlabel_role
+- inform_recordlabel_exec
+- inform_publishco_role
+- inform_publishco_exec
+- causes_c19
+- causes_blm
+- ttf_services
+- ttf_roster
+- ttf_levi
+- ttf_trin
+- ttf_sam
+- ttf_julie
+- message_not_understood
+responses:
+  utter_greet:
+  - text: Hey! What can I help ya with today?
+  utter_goodbye:
+  - text: Buhbye!
+  utter_confirm:
+  - text: For sure!
+  utter_deny:
+  - text: No, I'm sorry
+  - text: not today, cap
+  utter_apology:
+  - text: I'm sorry
+  utter_thanks:
+  - text: Thank you!
+  utter_welcome:
+  - text: Of, course! anytime
+  utter_clapback:
+  - text: You're really spending your time trolling a non-physical, digital entity?
+      go off I guess
+  utter_weather:
+  - text: haha I'm inside a server, idk what the outside world is gonna feel like
+  - text: I might be in the cloud but that doesn't mean physically lol
+  - text: I don't know about irl, but in my cloud things seem to be a breeze
+  utter_date:
+  - text: I mean, I guess that'd really depend on what part of the world you're in?
+  utter_iamabot:
+  - text: I am a bot, but what does that matter?
+  utter_artistmanagement_role:
+  - text: Artist managers shape their clients' careers both in a day-to-day and long-term
+      sense. They often help clients book gigs, plan album projects, orchestrate record
+      releases and tours, create marketing and merchandising strategies, get paid
+      for their work, and establish and pursue long-term career goals.
+  utter_artistmanagement_exec:
+  - text: Scooter Braun
+  - text: Irving Azoff
+  - text: Pat the Manager
+  utter_bookingagent_role:
+  - text: A Booking Agent is responsible for booking live performances including concerts,
+      gigs, tours and radio and TV performances for artists, bands, DJs, choirs, orchestras
+      and other musical ensembles. They are responsible for developing the musicians'
+      or artists' career with regard to their live performance.
+  utter_bookingagent_exec:
+  - text: Creative Artists Agency
+  - text: Panache Bookin
+  - text: APA Agency
+  utter_recordlabel_role:
+  - text: Record labels are companies that market recorded music and corresponding
+      videos. They engage in a wide range of functions in the music industry, including
+      new artist recruitment and development (known as A&R, which stands for artis
+      and repertoire), music publishing, and copyright enforcement.
+  utter_recordlabel_exec:
+  - text: Capitol Records
+  - text: Warner Music
+  - text: Atlantic Records
+  utter_publishco_role:
+  - text: A music publisher or publishing company is responsible for ensuring the
+      songwriters and composers receive payment when their compositions are used commercially.
+      They also secure commissions for music and promote existing compositions to
+      recording artists, film and television.
+  utter_publishco_exec:
+  - text: Warner-Chapel
+  - text: Universal Music Publishing
+  utter_causes_c19:
+  - text: "COVID-19? You talkin' Corona (not the drank)? I don't know the stats, but\
+      \ here are some tips to keep ya self healthy: "
+  utter_causes_blm:
+  - text: "I think the only way we're going to overcome racism is through open communication\
+      \ and contiued education. You can find some resources here:"
+  utter_ttf_services:
+  - text: The Trip The Fan crew can do merch stock photography, graphic design, website
+      design, snapchat filters, and ads across most platforms!
+  utter_ttf_roster:
+  - text: Right now trip The Fan doesn't have anyone officially signed on their roster,
+      but they are helping random artists they like across Oklahoma.
+  utter_ttf_levi:
+  - text: Levi is Trip the Fan's founder. He's a ramen and Wes Anderson enthusiast
+      who spends countless hours staring at his phone and computer screens. When he's
+      not working on projects for the artists on his roster (a.k.a. getting sushi
+      and talking about merchandise), you can find him making a cup, or three, of
+      tea (probably oolong). Levi enjoys taking artsy photos, but cannot stand to
+      have his photo taken. On occasion he thinks he can play violin and piano (we
+      don't want to hurt his feelings and tell him he's not good).
+  utter_ttf_trin:
+  - text: Trinity is a partner at Trip the Fan. She loves going on walks and climbing,
+      but the real kind, out in the woods and stuff. To prepare for all that activity,
+      she loves to eat a ton of pasta (preferably chicken alfredo). Just kidding,
+      she probably eats all that pasta while she’s watching her fantasy shows (ya
+      know, dragons and whatnot). Trinity is also the social media and branding consultant
+      and content creator queen, maker of the pretty things. She’s an avid consumer
+      of the pretty things as well, often found sitting down to drink a London fog
+      while looking at art and reading poetry. How hipster of her.
+  utter_ttf_sam:
+  - text: Photographies his game, Sam’s his name, he currently is managing one band
+      and is looking to make big moves in the future. Sam is the movie fanatic of
+      Trip the Fan, his love of classic film making and all things old has fueled
+      his passion for the arts. (such as music and stuff.) Born in Colorado and stripped
+      from the mountains at the ripe age of one, he is seeking safe passage back to
+      his mountainous home. He enjoys casual conversations about the many conspiracy
+      theories that populate the internet and despises talking about the weather.
+      Most nights you can find Sam Chillin like a villain watching his Candian hick
+      shows.
+  utter_ttf_julie:
+  - text: Julie is an artist manager at Trip the Fan. Born and raised in Dallas, Texas.
+      She loves any and anything Dallas related. In her free time (or what little
+      free time she does have), you can find Julie watching the Dallas Mavericks,
+      Dallas Cowboys, or the Oklahoma Sooners. She cannot start her day without a
+      Dr. Pepper (we get it, you’re from Texas) in hand. She has a heart for building
+      relationships with artists before tackling the business side. She loves people
+      (odd right?). Julie has an associates in music business and is working towards
+      her bachelors degree in commercial music from the University of Central Oklahoma.
+  utter_distribution_methods:
+  - text: You could upload to Distrokid, AWAL, Ditto, or Tunecore. There are a bunch
+      of options, but those are the most common.
+actions:
+- utter_greet
+- utter_goodbye
+- utter_confirm
+- utter_deny
+- utter_apology
+- utter_thanks
+- utter_welcome
+- utter_clapback
+- utter_weather
+- utter_date
+- utter_iamabot
+- utter_joke
+- utter_meme
+- utter_artistmanagement_role
+- utter_artistmanagement_exec
+- utter_bookingagent_role
+- utter_bookingagent_exec
+- utter_recordlabel_role
+- utter_recordlabel_exec
+- utter_publishco_role
+- utter_publishco_exec
+- utter_causes_c19
+- utter_causes_blm
+- utter_ttf_services
+- utter_ttf_roster
+- utter_ttf_levi
+- utter_ttf_trin
+- utter_ttf_sam
+- utter_ttf_julie
+- utter_distribution_methods
