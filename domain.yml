@@ -147,6 +147,10 @@ responses:
   utter_distribution_methods:
   - text: You could upload to Distrokid, AWAL, Ditto, or Tunecore. There are a bunch
       of options, but those are the most common.
+  utter_joke:
+  - text: Yo mama
+  utter_meme:
+  - text: daaank
 actions:
 - utter_greet
 - utter_goodbye
