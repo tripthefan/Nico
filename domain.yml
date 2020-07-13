@@ -2,8 +2,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- distribution_methods:
-    triggers: utter_distribution_methods
+- record_distribution_methods:
+    triggers: utter_record_distribution_methods
 - greet:
     triggers: utter_greet
 - goodbye:
@@ -162,7 +162,7 @@ responses:
       relationships with artists before tackling the business side. She loves people
       (odd right?). Julie has an associates in music business and is working towards
       her bachelors degree in commercial music from the University of Central Oklahoma.
-  utter_distribution_methods:
+  utter_record_distribution_methods:
   - text: You could upload to Distrokid, AWAL, Ditto, or Tunecore. There are a bunch
       of options, but those are the most common.
   utter_joke:
@@ -199,4 +199,5 @@ actions:
 - utter_ttf_trin
 - utter_ttf_sam
 - utter_ttf_julie
+- utter_record_distribution_methods
 - utter_distribution_methods

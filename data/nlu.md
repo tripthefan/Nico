@@ -188,7 +188,7 @@
 ## intent:out_of_scope
 - this makes no sense
 
-## intent:distribution_methods
+## intent:record_distribution_methods
 - how do i distribute my music
 - Hi! How do I digitally distribute my record?
 - how do I distribute my music
