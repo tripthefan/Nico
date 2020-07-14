@@ -192,3 +192,6 @@
 - how do i distribute my music
 - Hi! How do I digitally distribute my record?
 - how do I distribute my music
+
+## intent:distribution_methods
+- What can I upload my songs to?
