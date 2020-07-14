@@ -8,6 +8,7 @@
 - Hello
 - No come back
 - No, don’t say goodbye :(
+- Hey
 
 ## intent:goodbye
 - bye
@@ -15,6 +16,7 @@
 - see you around
 - see you later
 - Shut your face
+- Bye
 
 ## intent:confirm
 - yes
@@ -22,6 +24,8 @@
 - of course
 - that sounds good
 - correct
+- That’s surprisingly true. I didn’t think about it that way.
+- alright
 
 ## intent:deny
 - no
@@ -60,6 +64,8 @@
 - ur dumb
 - you're useless
 - you are dumb
+- stinky bot man
+- sounds like a nerd lol
 
 ## intent:chitchat_weather
 - what is the weather
@@ -67,6 +73,7 @@
 - is it going to rain
 - is it going to be stormy
 - how is the weather
+- What is the weather?
 
 ## intent:chitchat_date
 - what is today's date
@@ -139,6 +146,7 @@
 - what is a publisher for
 - why would i need a publisher
 - what is a music publisher
+- Oh nice. Can you tell me more about music publishing?
 
 ## intent:inform_publishco_exec
 - what is a famous publishing co
@@ -169,11 +177,14 @@
 - what does levi do
 - what is levi
 - Who is Levi?
+- who is Levi?
 
 ## intent:ttf_trin
 - who is trinity
 - what does trinity do
 - what is trinity
+- who is Trinity
+- who is trinity?
 
 ## intent:ttf_sam
 - who is sam
@@ -195,3 +206,4 @@
 
 ## intent:distribution_methods
 - What can I upload my songs to?
+- How do I distribute my music
