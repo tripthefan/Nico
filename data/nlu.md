@@ -9,6 +9,7 @@
 - No come back
 - No, don’t say goodbye :(
 - Hey
+- Hello!
 
 ## intent:goodbye
 - bye
@@ -47,11 +48,14 @@
 - do you have a name
 - what do i call you
 - Ok, but who are you?
+- What is your name?
+- what is your name?
 
 ## intent:chitchat_apology
 - im sorry
 - i am sorry
 - i apologze
+- my bad, I didn’t mean it
 
 ## intent:chitchat_thanks
 - thank you
@@ -74,6 +78,7 @@
 - is it going to be stormy
 - how is the weather
 - What is the weather?
+- I was wondering if you could tell me the weather
 
 ## intent:chitchat_date
 - what is today's date
@@ -96,6 +101,8 @@
 - know any jokes
 - tell me a joke
 - say a joke
+- can you tell me a joke?
+- Can you tell me a different joke?
 
 ## intent:chitchat_meme
 - know any dank memes
@@ -109,6 +116,9 @@
 - why would i need an artist manager
 - what is artist management?
 - what is an artist managemer
+- What is an artist manager?
+- hi! Can you tell me what an artist manager does?
+- artist manager?
 
 ## intent:inform_artistmanagement_exec
 - who is a famous artist manager
@@ -134,6 +144,8 @@
 - what is a major record label?
 - What is an independent record label?
 - what is a record label?
+- record label
+- can you tell me about record labels?
 
 ## intent:inform_recordlabel_exec
 - what is a famous record label
@@ -147,6 +159,7 @@
 - why would i need a publisher
 - what is a music publisher
 - Oh nice. Can you tell me more about music publishing?
+- music publisher?
 
 ## intent:inform_publishco_exec
 - what is a famous publishing co
@@ -190,11 +203,13 @@
 - who is sam
 - what does sam do
 - what is sam
+- who is Sam?
 
 ## intent:ttf_julie
 - who is julie
 - what does julie do
 - what is julie
+- ok. Who is Julie?
 
 ## intent:out_of_scope
 - this makes no sense
