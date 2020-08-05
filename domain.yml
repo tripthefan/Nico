@@ -32,7 +32,7 @@ intents:
   - ask_capability: utter_nico_capability
   - ask_howru: utter_iam_well
   - ask_creator: utter_created_by
-  - ask_directive
+  - ask_directive: utter_directive
 
 # causes tripthefan wants to bring awareness to
   - causes_c19: utter_causes_c19
