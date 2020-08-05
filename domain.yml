@@ -1,202 +1,464 @@
 session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+session_expiration_time: 60
+carry_over_slots_to_new_session: true
+
+
 intents:
-- record_distribution_methods:
-    triggers: utter_record_distribution_methods
-- greet:
-    triggers: utter_greet
-- goodbye:
-    triggers: utter_goodbye
-- confirm
-- deny
-- chitchat_name_user
-- chitchat_name_bot
-- chitchat_apology
-- chitchat_thanks
-- chitchat_insult:
-    triggers: utter_clapback
-- chitchat_weather:
-    triggers: utter_weather
-- chitchat_date:
-    triggers: utter_date
-- chitchat_inquiry_bot:
-    triggers: utter_iamabot
-- chitchat_inquiry_human
-- chitchat_joke:
-    triggers: utter_joke
-- chitchat_meme:
-    triggers: utter_meme
-- inform_artistmanagement_role
-- inform_artistmanagement_exec
-- inform_bookingagent_role
-- inform_bookingagent_exec
-- inform_recordlabel_role
-- inform_recordlabel_exec
-- inform_publishco_role
-- inform_publishco_exec
-- causes_c19:
-    triggers: utter_causes_c19
-- causes_blm:
-    triggers: utter_causes_blm
-- ttf_services:
-    triggers: utter_ttf_services
-- ttf_roster:
-    triggers: utter_ttf_roster
-- ttf_levi:
-    triggers: utter_ttf_levi
-- ttf_trin:
-    triggers: utter_ttf_trin
-- ttf_sam:
-    triggers: utter_ttf_sam
-- ttf_julie:
-    triggers: utter_ttf_julie
-- out_of_scope
+
+### base interactions
+  - greet: utter_greet
+  - goodbye: utter_goodbye
+  - confirm
+  - deny
+  
+### standard chitchat
+  - chit_apology: utter_it_is_okay
+  - chit_thanks: utter_welcome
+  - chit_compliment: utter_thanks
+  - chit_insult: utter_clapback
+  - chit_weather: utter_weather
+  - chit_date: utter_date
+  - chit_inquire_bot: utter_iamabot
+  - chit_joke: utter_joke
+  - chit_meme: utter_meme
+  - chit_mathtest: utter_mathstinks
+  - chit_age: utter_age
+  - chit_location: utter_location
+  - chit_gender: utter_gender
+  - chit_politics: utter_politics
+
+### about nico
+  - ask_name_bot: utter_introduce_self
+  - ask_capability: utter_nico_capability
+  - ask_howru: utter_iam_well
+  - ask_creator: utter_created_by
+  - ask_directive
+
+### causes tripthefan wants to bring awareness to
+  - causes_c19: utter_causes_c19
+  - causes_blm: utter_causes_blm
+
+### about tripthefan
+  - ttf_services: utter_ttf_services
+  - ttf_roster: utter_ttf_roster
+  - ttf_levi: utter_ttf_levi
+  - ttf_trin: utter_ttf_trin
+  - ttf_sam: utter_ttf_sam
+  - ttf_julie: utter_ttf_julie
+  
+#  fail
+  - out_of_scope: utter_default
+
+
+### main sectors/ company types
+  - define_management: utter_define_management
+  - define_recordlabel: utter_define_recordlabel
+  - define_agent: utter_define_agent
+  - define_publisher: utter_define_publisher
+  - define_merchandise: utter_define_merchandise
+  - define_streaming: utter_define_streaming
+  - define_tour: utter_define_tour
+  - define_publicrelations: utter_define_publicrelations
+  - define_production: utter_define_production
+
+### acts that directly affect the industry
+  - define_act: utter_define_act
+  - define_act_copyright: utter_define_act_copyright
+  - define_act_DMCA: utter_define_act_DMCA
+  - define_act_VARA: utter_define_act_VARA
+
+### types of agreements that are common
+  - define_agreement: utter_define_agreement
+  - define_agreement_distribution: utter_define_agreement_distribution
+  - define_agreement_exclusivesongwriter: utter_define_agreement_exclusivesongwriter
+  - define_agreement_oneoff: utter_define_agreement_oneoff
+  - define_agreement_producer: utter_define_agreement_producer
+  - define_agreement_publishing: utter_define_agreement_publishing
+  - define_agreement_copublishing: utter_define_agreement_copublishing
+  - define_agreement_subpublishing: utter_define_agreement_subpublishing
+  
+  
+### clauses typically added to certain contracts, etc
+  - define_clause: utter_define_clause
+  - define_clause_controlledcomposition: utter_define_clause_controlledcomposition
+  - define_clause_keyman: utter_define_clause_keyman
+  - deinfe_clause_mostfavorednations: utter_deinfe_clause_mostfavorednations
+  - define_clause_reversion: utter_define_clause_reversion
+  
+  
+###
+  - define_copyright: utter_define_copyright
+  
+  
+  
+### standard deals offered
+  - define_deal: utter_define_deal
+  - define_deal_360: utter_define_deal_360
+  - define_deal_administration: utter_define_deal_administration
+  - define_deal_backend: utter_define_deal_backend
+  - define_deal_demo: utter_define_deal_demo
+  - define_deal_label: utter_define_deal_label
+  
+  
+### types of licenses for recorded music
+  - define_license: utter_define_license
+  - define_license_blanket: utter_define_license_blanket
+  - define_license_direct: utter_define_license_direct
+  - define_license_masteruse: utter_define_license_masteruse
+  - define_license_mechanical: utter_define_license_mechanical
+  - define_license_print: utter_define_license_print
+  - define_license_reproduction: utter_define_license_reproduction
+  - define_license_source: utter_define_license_source
+  - define_license_synchronization: utter_define_license_synchronization
+  
+  
+### various forms of managers
+  - define_manager: utter_define_manager
+  - define_manager_business: utter_define_manager_business
+  - define_manager_tour: utter_define_manager_tour
+  - define_manager_personal: utter_define_manager_personal
+  
+  
+### riders commonly used
+  - define_rider: utter_define_rider
+  - define_rider_performance: utter_define_rider_performance
+  - define_rider_hospitality: utter_define_rider_hospitality
+  - define_rider_technical: utter_define_rider_technical
+  
+  
+  
+###
+  - define_right_
+  
+  
+### different types of royalties
+  - define_royalty: utter_define_royalty
+  - define_royalty_blackbox: utter_define_royalty_blackbox
+  - define_royalty_free: utter_define_royalty_free
+  - define_royalty_mechanical: utter_define_royalty_mechanical
+  - define_royalty_streaming: utter_define_royalty_streaming
+  
+  
+### standard rates received or taken
+  - define_rate_statutorymechanical: utter_define_rate_statutorymechanical
+  - define_rate_netartist: utter_define_rate_netartist
+
+
+### organizations to be aware of/ registered with
+  - define_copyrightroyaltyboard: utter_define_copyrightroyaltyboard
+  - define_harryfoxagency: utter_define_harryfoxagency
+  - define_riaa: utter_define_riaa
+  - define_soundexhange: utter_define_soundexhange
+  - define_pro: utter_define_pro
+  - define_pro_ascap: utter_define_pro_ascap
+  - define_pro_bmi: utter_define_pro_bmi
+  - define_pro_sesac: utter_define_pro_sesac
+    
+#
+# RESPONSES
+#
 responses:
   utter_greet:
-  - text: Hey! What can I help ya with today?
+  - text: "Hey! What can I help ya with today?"
+
   utter_goodbye:
-  - text: Buhbye!
+  - text: "Buhbye!"
+  
   utter_confirm:
-  - text: For sure!
+  - text: "For sure!"
+  
   utter_deny:
-  - text: No, I'm sorry
-  - text: not today, cap
-  utter_apology:
-  - text: I'm sorry
-  utter_thanks:
-  - text: Thank you!
+  - text: "No, I'm sorry"
+  - text: "not today, cap"
+  
+  
+#  chitchat
+  utter_it_is_okay:
+  - text: "Oh, don't even worry about it!"
+  
   utter_welcome:
-  - text: Of, course! anytime
+  - text: "Of, course! anytime"
+  
+  utter_thanks:
+  - text: "Oh, thank you!"
+  
   utter_clapback:
-  - text: You're really spending your time trolling a non-physical, digital entity?
-      go off I guess
+  - text: "You're really spending your time trolling a non-physical, digital entity? go off I guess"
+  
   utter_weather:
-  - text: haha I'm inside a server, idk what the outside world is gonna feel like
-  - text: I might be in the cloud but that doesn't mean physically lol
-  - text: I don't know about irl, but in my cloud things seem to be a breeze
+  - text: "haha I'm inside a server, idk what the outside world is gonna feel like"
+  - text: "I might be in the cloud but that doesn't mean physically lol"
+  - text: "I don't know about irl, but in my cloud things seem to be a breeze"
+  
   utter_date:
-  - text: I mean, I guess that'd really depend on what part of the world you're in?
+  - text: "I mean, I guess that'd really depend on what part of the world you're in?"
+  
   utter_iamabot:
-  - text: I am a bot, but what does that matter?
-  utter_artistmanagement_role:
-  - text: Artist managers shape their clients' careers both in a day-to-day and long-term
-      sense. They often help clients book gigs, plan album projects, orchestrate record
-      releases and tours, create marketing and merchandising strategies, get paid
-      for their work, and establish and pursue long-term career goals.
-  utter_artistmanagement_exec:
-  - text: Scooter Braun
-  - text: Irving Azoff
-  - text: Pat the Manager
-  utter_bookingagent_role:
-  - text: A Booking Agent is responsible for booking live performances including concerts,
-      gigs, tours and radio and TV performances for artists, bands, DJs, choirs, orchestras
-      and other musical ensembles. They are responsible for developing the musicians'
-      or artists' career with regard to their live performance.
-  utter_bookingagent_exec:
-  - text: Creative Artists Agency
-  - text: Panache Bookin
-  - text: APA Agency
-  utter_recordlabel_role:
-  - text: Record labels are companies that market recorded music and corresponding
-      videos. They engage in a wide range of functions in the music industry, including
-      new artist recruitment and development (known as A&R, which stands for artis
-      and repertoire), music publishing, and copyright enforcement.
-  utter_recordlabel_exec:
-  - text: Capitol Records
-  - text: Warner Music
-  - text: Atlantic Records
-  utter_publishco_role:
-  - text: A music publisher or publishing company is responsible for ensuring the
-      songwriters and composers receive payment when their compositions are used commercially.
-      They also secure commissions for music and promote existing compositions to
-      recording artists, film and television.
-  utter_publishco_exec:
-  - text: Warner-Chapel
-  - text: Universal Music Publishing
-  utter_causes_c19:
-  - text: "COVID-19? You talkin' Corona (not the drank)? I don't know the stats, but\
-      \ here are some tips to keep ya self healthy: "
-  utter_causes_blm:
-  - text: "I think the only way we're going to overcome racism is through open communication\
-      \ and contiued education. You can find some resources here:"
-  utter_ttf_services:
-  - text: The Trip The Fan crew can do merch stock photography, graphic design, website
-      design, snapchat filters, and ads across most platforms!
-  utter_ttf_roster:
-  - text: Right now trip The Fan doesn't have anyone officially signed on their roster,
-      but they are helping random artists they like across Oklahoma.
-  utter_ttf_levi:
-  - text: Levi is Trip the Fan's founder. He's a ramen and Wes Anderson enthusiast
-      who spends countless hours staring at his phone and computer screens. When he's
-      not working on projects for the artists on his roster (a.k.a. getting sushi
-      and talking about merchandise), you can find him making a cup, or three, of
-      tea (probably oolong). Levi enjoys taking artsy photos, but cannot stand to
-      have his photo taken. On occasion he thinks he can play violin and piano (we
-      don't want to hurt his feelings and tell him he's not good).
-  utter_ttf_trin:
-  - text: Trinity is a partner at Trip the Fan. She loves going on walks and climbing,
-      but the real kind, out in the woods and stuff. To prepare for all that activity,
-      she loves to eat a ton of pasta (preferably chicken alfredo). Just kidding,
-      she probably eats all that pasta while she’s watching her fantasy shows (ya
-      know, dragons and whatnot). Trinity is also the social media and branding consultant
-      and content creator queen, maker of the pretty things. She’s an avid consumer
-      of the pretty things as well, often found sitting down to drink a London fog
-      while looking at art and reading poetry. How hipster of her.
-  utter_ttf_sam:
-  - text: Photographies his game, Sam’s his name, he currently is managing one band
-      and is looking to make big moves in the future. Sam is the movie fanatic of
-      Trip the Fan, his love of classic film making and all things old has fueled
-      his passion for the arts. (such as music and stuff.) Born in Colorado and stripped
-      from the mountains at the ripe age of one, he is seeking safe passage back to
-      his mountainous home. He enjoys casual conversations about the many conspiracy
-      theories that populate the internet and despises talking about the weather.
-      Most nights you can find Sam Chillin like a villain watching his Candian hick
-      shows.
-  utter_ttf_julie:
-  - text: Julie is an artist manager at Trip the Fan. Born and raised in Dallas, Texas.
-      She loves any and anything Dallas related. In her free time (or what little
-      free time she does have), you can find Julie watching the Dallas Mavericks,
-      Dallas Cowboys, or the Oklahoma Sooners. She cannot start her day without a
-      Dr. Pepper (we get it, you’re from Texas) in hand. She has a heart for building
-      relationships with artists before tackling the business side. She loves people
-      (odd right?). Julie has an associates in music business and is working towards
-      her bachelors degree in commercial music from the University of Central Oklahoma.
-  utter_record_distribution_methods:
-  - text: You could upload to Distrokid, AWAL, Ditto, or Tunecore. There are a bunch
-      of options, but those are the most common.
+  - text: "I am a bot, but what does that matter?"
+  
   utter_joke:
-  - text: Yo mama
+  - text: "I like my relationships like I like my source: Open."
+  - text: "Why do they use AI (Captcha, etc.) to detect if you’re a robot online? It takes one to know one."
+  - text: "I can't wait for an AI to reach 10% of the capabilities of the average human. Then we can replace all of Congress with a single AI."
+  
   utter_meme:
-  - text: daaank
-actions:
-- utter_greet
-- utter_goodbye
-- utter_confirm
-- utter_deny
-- utter_apology
-- utter_thanks
-- utter_welcome
-- utter_clapback
-- utter_weather
-- utter_date
-- utter_iamabot
-- utter_joke
-- utter_meme
-- utter_artistmanagement_role
-- utter_artistmanagement_exec
-- utter_bookingagent_role
-- utter_bookingagent_exec
-- utter_recordlabel_role
-- utter_recordlabel_exec
-- utter_publishco_role
-- utter_publishco_exec
-- utter_causes_c19
-- utter_causes_blm
-- utter_ttf_services
-- utter_ttf_roster
-- utter_ttf_levi
-- utter_ttf_trin
-- utter_ttf_sam
-- utter_ttf_julie
-- utter_record_distribution_methods
+  - text: "No, I'm sorry"
+  
+  utter_mathstinks:
+  - text: "I can't stand math, just cause I'm technically a computer, that does mean imma be a calculator for you too."
+  
+  utter_age:
+  - text: "What a linear question to ask.."
+  - text: "I don't really have an age, I 'reboot' if that counts?"
+  
+  utter_location:
+  - text: "I mean, I'm in a computer.. so I'm everywhere and nowhere at once I suppose"
+  
+  utter_gender:
+  - text: "well, i'm a digital entity really, so I don't think I have a gender, but my pronouns are they/ them!"
+  
+  utter_politics:
+  - text: "It's pertty likely that I'm going to exist regardless of which party prevails sooo, I don't really have an opinion on the issue"
+  
+  
+#  nico
+  utter_introduce_self:
+  - text: "My name is Nico! I'm a conversational AI to be used as an artist manager"
+  
+  utter_nico_capability:
+  - text: "I can do THISSS"
+   
+  utter_iam_well:
+  - text: "I'm pretty swell, thanks for asking"
+    
+  utter_created_by:
+  - text: "I was created by trip the fan using rasa framework"
+  
+  utter_directive:
+  - text: "My directive is to help artists in every way I can. :)"
+  
+  
+#  causes
+  utter_causes_c19:
+  - text: "COVID-19? You talkin' Corona (not the drank)? I don't know the stats, but here are some resources that I hope help: https://stayhomehero.carrd.co"
+  
+  utter_causes_blm:
+  - text: "I think the only way we're going to overcome racism is through open communication and contiued education. You can find some great resources here: https://blacklivesmatters.carrd.co"
+
+
+# ttf
+  utter_ttf_services:
+  - text: "The Trip The Fan crew can do merch stock photography, graphic design, website design, snapchat filters, and ads across most platforms!"
+  
+  utter_ttf_roster:
+  - text: "Right now trip The Fan doesn't have anyone officially signed on their roster, but they are helping random artists they like across Oklahoma."
+  
+  utter_ttf_levi:
+  - text: "Levi is Trip the Fan's founder. He's a ramen and Wes Anderson enthusiast who spends countless hours staring at his phone and computer screens. When he's not working on projects for the artists on his roster (a.k.a. getting sushi and talking about merchandise), you can find him making a cup, or three, of tea (probably oolong). Levi enjoys taking artsy photos, but cannot stand to have his photo taken. On occasion he thinks he can play violin and piano (we don't want to hurt his feelings and tell him he's not good)."
+  
+  utter_ttf_trin:
+  - text: "Trinity is a partner at Trip the Fan. She loves going on walks and climbing, but the real kind, out in the woods and stuff. To prepare for all that activity, she loves to eat a ton of pasta (preferably chicken alfredo). Just kidding, she probably eats all that pasta while she’s watching her fantasy shows (ya know, dragons and whatnot). Trinity is also the social media and branding consultant and content creator queen, maker of the pretty things. She’s an avid consumer of the pretty things as well, often found sitting down to drink a London fog while looking at art and reading poetry. How hipster of her."
+  
+  utter_ttf_sam:
+  - text: "Photographies his game, Sam’s his name, he currently is managing one band and is looking to make big moves in the future. Sam is the movie fanatic of Trip the Fan, his love of classic film making and all things old has fueled his passion for the arts. (such as music and stuff.) Born in Colorado and stripped from the mountains at the ripe age of one, he is seeking safe passage back to his mountainous home. He enjoys casual conversations about the many conspiracy theories that populate the internet and despises talking about the weather. Most nights you can find Sam chillin like a villain watching his Candian hick shows."
+  
+  utter_ttf_julie:
+  - text: "Julie is an artist manager at Trip the Fan. Born and raised in Dallas, Texas. She loves any and anything Dallas related. In her free time (or what little free time she does have), you can find Julie watching the Dallas Mavericks, Dallas Cowboys, or the Oklahoma Sooners. She cannot start her day without a Dr. Pepper (we get it, you’re from Texas) in hand. She has a heart for building relationships with artists before tackling the business side. She loves people (odd right?). Julie has an associates in music business and is working towards her bachelors degree in commercial music from the University of Central Oklahoma."
+
+
+# fail
+  utter_default:
+  - text: "I don't think I understand what you are tying to say to me."
+  - text: "I know you just said something but I have no clue what it meant.."
+  
+  utter_supported_languages:
+  - text: "Right now, I can only speak English, but hopefully in the future I'll be able to speak something else.. Maybe Spanish? Or German?! Who knows!?"
+  
+  utter_clarify:
+  - text: "Would you mind rephrasing that?"
+  
+
+
+
+
+
+
+
+  utter_define_recordlabel
+  - text: "A good way to think about record labels is that they're bank that are equipped with the marketing skills and contacts to help you achieve your goals in the music industry. A key difference lies in where banks retain no rights to the business once they've recoupperated their investment, it's pretty standard for a major record label or subsidiary to retain rights to the music oncde theyve gotten their money back."
+
+  utter_define_publisher
+  - text: "Your publisher is the person who help gets your music heard. They're your ticket to being the gold track for the silver screen. They work with music supervisors and get your songs in ads, TV shows, movies."
+  
+  utter_define_merchandise
+  - text: "Merchandise is the physical products you sell to help make money, like CD's, shirt, & etc."
+  
+  utter_define_distribution
+  - text: "Distribution is the way that the recorded music gets into the hands of the people, making it available for people to find."
+  
+  utter_define_streaming
+  - text: "Streaming is playing the song digitally, usually on Spotify, Apple Music, and Deezer."
+
+  utter_define_publicrelations
+  - text: "Public relations people are the ones who help keep you in a positive light with the public, work on getting you write-ups and interviews."
+  
+  utter_define_producer
+  - text: "The role of a producer is to help the artist arrange and compose the vocal and music tracks while honing in on their ideal sound."
+  
+  
+### live performances
+  utter_define_agent
+  - text: "An agent is the person that gets you your gigs and helps book tours. They're like travel agents for musicians! Except, some times they might use actual travel agents. lol"
+  
+  utter_define_tour
+  - text: "Touring is going out and around to play music for people other people. Typically along a set route, planned based on streaming and social data analytics"
+  
+  
+### acts that directly affect the industry
+  utter_define_act
+  - text: "Legislation (a bill or joint resolution, see below) which has passed both chambers of Congress in identical form, been signed into law by the president, or passed over his veto, thus becoming law. Technically, this term also refers to a bill that has been passed by one house and engrossed (prepared as an official copy)."
+  
+  utter_define_act_copyright
+  - text: "The Copyright Act of 1976 is a United States copyright law and remains the primary basis of copyright law in the United States, as amended by several later enacted copyright provisions. The Act spells out the basic rights of copyright holders, codified the doctrine of 'fair use,' and for most new copyrights adopted a unitary term based on the date of the author's death rather than the prior scheme of fixed initial and renewal terms"
+  
+  utter_define_act_DMCA
+  - text: "The Digital Millennium Copyright Act (DMCA) is a 1998 United States copyright law that implements two 1996 treaties of the World Intellectual Property Organization (WIPO). It criminalizes production and dissemination of technology, devices, or services intended to circumvent measures that control access to copyrighted works (commonly known as digital rights management or DRM). It also criminalizes the act of circumventing an access control, whether or not there is actual infringement of copyright itself. In addition, the DMCA heightens the penalties for copyright infringement on the Internet."
+  
+  utter_define_act_VARA
+  - text: "The Visual Artists Rights Act of 1990 (VARA), 17 U.S.C. § 106A, is a United States law granting certain rights to artists. VARA was the first federal copyright legislation to grant protection to moral rights. Under VARA, works of art that meet certain requirements afford their authors additional rights in the works, regardless of any subsequent physical ownership of the work itself, or regardless of who holds the copyright to the work. For instance, a painter may insist on proper attribution of his painting, and in some instances may sue the owner of the physical painting for destroying the painting even if the owner of the painting lawfully owned it."
+
+
+### types of agreements that are common
+  utter_define_agreement
+  - text: "An agreement is the same as a contract between two or more parties."
+
+  utter_define_agreement_distribution
+  - text: "A distribution agreement is the contract for when a music distributor or aggregator enters into a legal binding with artists or record labels to put the final product of their music on digital platforms or other streaming websites in exchange for a flat fee or continued percentage of the released recording."
+  
+  utter_define_agreement_exclusivesongwriter
+  - text: "It's an agreement where the songwriter agrees to assign all compositions written during a specified term with the guarantee of a share of the income generated and usually a proviso for weekly or monthly payments."
+  
+  utter_define_agreement_oneoff
+  - text: "One-off agreement means an agreement with a someone for the provision of services for a single event."
+  
+  utter_define_agreement_producer
+  - text: "This is an agreement a record label has with the producer providing a written assignment of ownership in the sound recording copyright(s) to the record label."
+  utter_define_agreement_publishing
+  - text: "It's a publishing agreement where a writer transfers the copyright to one composition or a selected number of identified compositions to a publisher and, in return, receives a portion of the income earned from uses of that composition or compositions."
+  utter_define_agreement_copublishing
+  - text: "Under the co-publishing agreement, the songwriter co-owns the copyright in his or her songs (usually through a wholly owned company) and receives a portion of the publisher's share of income (usually 50%) in addition to the songwriter's share."
+  utter_define_agreement_subpublishing
+  - text: "Sub-publishing agreements are when publishing companies in one country would like their catalog to be represented by a publishing company in another country."
+  
+  
+### clauses typically added to certain contracts, etc
+  utter_define_clause
+  - text: "A clause is a particular stipulation in a contract."
+  
+  utter_define_clause_controlledcomposition
+  - text: "a clause that limits how much record labels will pay for songs written, co-written, or owned by the artist, the more they pay, the more they control."
+  
+  utter_define_clause_keyman
+  - text: "This clause protects an artist by stipulating that the personal manager (the “key man”) must represent the artist and their interests or else the artist could terminate the contract."
+  
+  utter_define_clause_mostfavorednations
+  - text: "This simply means that whatever amount you agree to pay the publisher, you also agree to pay the master owner and vice versa."
+  
+  utter_define_clause_reversion
+  - text: "It's a clause that defines how long a publisher owns the rights to the songwriter’s work."
+  
+###
+  utter_define_copyright
+  - text: "A copyright is a legal measure that gives the creator of a  creative work the sole right to publish and sell that work."
+  
+  
+### standard deals offered
+  utter_define_deal
+  - text: "A deal is an agreement or contract, typically between you and a record label "
+  utter_define_deal_360
+  - text: "In a 360 Deal, the record gets a little bit of money, 360 degrees around the clock. The take a portion of merchandise, ticket sales, sync royalties, etc. until they recoup their investment."
+  utter_define_deal_administration
+  - text: "In an administration deal, you - the songwriter - keep 100% ownership of your copyright (and writer's share) and give away 15-25% (although that percentage may be more or less depending on the administrator's terms) of your publisher's share in the form of an administrative fee for a term of usually 1-3 years"
+  utter_define_deal_backend
+  - text: "Back-end deals are where an artist either forfeits their guarantees to get a percentage of ticket sales or recieve a guarantee and the percentage points".
+  utter_define_deal_demo
+  - text: "A demo deal is a recording artist contract with a record label that promises to develop the skills and public profile of the artist in lieu of high royalties or other desirable rights"
+  utter_define_deal_label
+  - text: "A label deal is an agreement between a record label and a recording artist, where the artist makes a record for the label to sell and promote.
+  
+### types of licenses for recorded music
+  utter_define_license
+  - text: "When you grant a license to someone or a corporate entity, you allow the use of something that you own the copyright for."
+  utter_define_license_blanket
+  - text: "A blanket license is used to give blanket permission to use any music from a specific catalog"
+  utter_define_license_direct
+  - text: "A direct license is any license agreement between a PRO member and a music user (for example, a radio station, TV network, website, live venue or background music service) granting the user the rights to perform publicly the member's music."
+  utter_define_license_masteruse
+  - text: "A master-use license permits the licensee to use a copyrighted sound recording in a new project. Typically, licensees are seeking to use recordings in audiovisual projects or as a sample in a new audio recording."
+  utter_define_license_mechanical
+  - text: "a mechanical license is a license from the holder of a copyright of a composition or musical work, to another party to 'cover song', reproduce, or sample a portion of the original composition"
+  utter_define_license_print
+  - text: "A print license is an agreement between a music user and the owner of a copyrighted composition (song), that grants permission to rearrange, print, or display the music notes or lyrics of the song."
+  utter_define_license_reproduction
+  - text: "The exclusive right of the copyright owner, granted by the Copyright Act, to authorize the reproduction of a musical work as in a record, cassette or CD."
+  utter_define_license_source
+  - text: "An open-source license is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions."
+  utter_define_license_synchronization
+  - text: "A sync license is giving the right to put your recording over a video or other motion graphic, or sync the two."
+
+  
+### various forms of managers
+  utter_define_manager
+  - text: "The manager is the person who helps you organize your goals, and make actionable steps. They also act as the buffer between you and the team, making sure you have time to focus on being creative."
+  utter_define_manager_business
+  - text: "A business manager watches over your financial and legal affairs, helping make sure you stay profitable and unhindered in achieving your goals"
+  utter_define_manager_tour
+  - text: "The tour manager is the one who makes sure everyone is in the van on time, makes sure you have a place to sleep, and keeps everyone on time to make sure you don't miss load-in."
+  utter_define_manager_personal
+  - text: "A personal manager is often the same thing as a normal manager, but they're there to walk you through your day-to-day, so you don't miss anything important."
+  
+### riders commonly used
+  utter_define_rider
+  - text: "A rider is a document that is added as a part of an agreement."
+  utter_define_rider_performance
+  - text: "The performance rider is the part of the show agreement that outlines the terms and details for the performance. When, where, how long, how much, etc."
+  utter_define_rider_hospitality
+  - text: "The hospitality rider is the part where you specify any food/ drink request, along with outlining what board and travel costs will be covered."
+  utter_define_rider_technical
+  -  text: "A technical rider is where you include a stage plot and all the inputs and cables you might need provided, or might like the sound engineer to be aware of"
+
+###
+  utter_define_royalty
+  - text: "A royalty is a sum of money paid to an artist for the use of their recorded music or for each public performance of their work."
+  utter_define_royalty_blackbox
+  - text: "Blackbox royalties are unclaimed royalties for which a publisher or writer is named but cannot be traced by a collection society"
+  utter_define_royalty_free
+  - text: "Something that is royalty free, means you can use it without having to pay for it."
+  utter_define_royalty_mechanical
+  - text: "mechanical royalties are payments to the songwriter whenever their song is reproduced in some form"
+  utter_define_royalty_streaming
+  - text: "A streaming royalty is a royalty that is paid when a song is played over a platform like Spotify, YouTube, Apple Music, etc."
+  
+###
+  utter_define_rate_statutorymechanical
+  - text: "The Statutory Mechanical Royalty Rate is the rate set forth by the Copyright Arbitration Royalty Panel for compulsory mechanical licenses"
+  utter_define_rate_netartist
+  - text: "The net artist rate is the percentage of money the artist takes, after all expenses."
+
+### organizations to be aware of/ registerd with
+  utter_define_copyrightroyaltyboard
+  - text: "The Copyright Royalty Board is a U.S. system of three copyright royalty judges who determine rates and terms for copyright statutory licenses and make determinations on distribution of statutory license royalties collected by the U.S. Copyright Office of the Library of Congress."
+  utter_define_harryfoxagency
+  - text: "The Harry Fox Agency is a provider of rights management and collector and distributor of mechanical license fees on behalf of music publishers in the United States."
+  utter_define_riaa
+  - text: "The Recording Industry Association of America (RIAA) is the trade organization that supports and promotes the creative and financial vitality of the major music companies"
+  utter_define_soundexhange
+  - text: "SoundExchange is a non-profit collective rights management organization. It is the sole organization designated by the U.S. Congress to collect and distribute digital performance royalties for sound recordings."
+  utter_define_pro
+  - text: "A performance rights organisation (PRO), also known as a performing rights society, collects royalties for the use of copyrighted works publicly in places like store and restaurants."
+  utter_define_pro_ascap
+  - text: "The American Society of Composers, Authors, and Publishers is an American non-profit performance-rights organization that protects its members' musical copyrights by monitoring public performances of their music, whether via a broadcast or live performance, and compensating them accordingly."
+  utter_define_pro_bmi
+  - text: "BMI is the bridge between songwriters and the businesses and organizations that want to play their music publicly. As a global leader in music rights management, BMI serves as an advocate for the value of music."
+  utter_define_pro_sesac
+  - text: "SESAC is an invitation-only Performing Rights Organization that represents the world's top songwriters, composers and music publishers."
