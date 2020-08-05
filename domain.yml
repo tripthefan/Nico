@@ -5,13 +5,13 @@ carry_over_slots_to_new_session: true
 
 intents:
 
-# base interactions
+### base interactions
   - greet: utter_greet
   - goodbye: utter_goodbye
   - confirm
   - deny
   
-# standard chitchat
+### standard chitchat
   - chit_apology: utter_it_is_okay
   - chit_thanks: utter_welcome
   - chit_compliment: utter_thanks
@@ -27,18 +27,18 @@ intents:
   - chit_gender: utter_gender
   - chit_politics: utter_politics
 
-# about nico
+### about nico
   - ask_name_bot: utter_introduce_self
   - ask_capability: utter_nico_capability
   - ask_howru: utter_iam_well
   - ask_creator: utter_created_by
-  - ask_directive: utter_directive
+  - ask_directive
 
-# causes tripthefan wants to bring awareness to
+### causes tripthefan wants to bring awareness to
   - causes_c19: utter_causes_c19
   - causes_blm: utter_causes_blm
 
-# about tripthefan
+### about tripthefan
   - ttf_services: utter_ttf_services
   - ttf_roster: utter_ttf_roster
   - ttf_levi: utter_ttf_levi
@@ -46,12 +46,12 @@ intents:
   - ttf_sam: utter_ttf_sam
   - ttf_julie: utter_ttf_julie
   
-# FAIL
+### FAIL
   - out_of_scope: utter_default
 
 
 
-# main sectors/ company types
+### main sectors/ company types
   - define_management: utter_define_management
   - define_recordlabel: utter_define_recordlabel
   - define_agent: utter_define_agent
@@ -62,13 +62,13 @@ intents:
   - define_publicrelations: utter_define_publicrelations
   - define_production: utter_define_production
 
-# acts that directly affect the industry
+### acts that directly affect the industry
   - define_act: utter_define_act
   - define_act_copyright: utter_define_act_copyright
   - define_act_DMCA: utter_define_act_DMCA
   - define_act_VARA: utter_define_act_VARA
 
-# types of agreements that are common
+### types of agreements that are common
   - define_agreement: utter_define_agreement
   - define_agreement_distribution: utter_define_agreement_distribution
   - define_agreement_exclusivesongwriter: utter_define_agreement_exclusivesongwriter
@@ -78,17 +78,18 @@ intents:
   - define_agreement_copublishing: utter_define_agreement_copublishing
   - define_agreement_subpublishing: utter_define_agreement_subpublishing
   
-# clauses typically added to certain contracts, etc
+  
+### clauses typically added to certain contracts, etc
   - define_clause: utter_define_clause
   - define_clause_controlledcomposition: utter_define_clause_controlledcomposition
   - define_clause_keyman: utter_define_clause_keyman
   - deinfe_clause_mostfavorednations: utter_deinfe_clause_mostfavorednations
   - define_clause_reversion: utter_define_clause_reversion
   
-# copyright
+### copyright
   - define_copyright: utter_define_copyright
   
-# standard deals offered
+### standard deals offered
   - define_deal: utter_define_deal
   - define_deal_360: utter_define_deal_360
   - define_deal_administration: utter_define_deal_administration
@@ -96,7 +97,7 @@ intents:
   - define_deal_demo: utter_define_deal_demo
   - define_deal_label: utter_define_deal_label
   
-# types of licenses for recorded music
+### types of licenses for recorded music
   - define_license: utter_define_license
   - define_license_blanket: utter_define_license_blanket
   - define_license_direct: utter_define_license_direct
@@ -107,30 +108,30 @@ intents:
   - define_license_source: utter_define_license_source
   - define_license_synchronization: utter_define_license_synchronization
 
-# various forms of managers
+### various forms of managers
   - define_manager: utter_define_manager
   - define_manager_business: utter_define_manager_business
   - define_manager_tour: utter_define_manager_tour
   - define_manager_personal: utter_define_manager_personal
   
-# riders commonly used
+### riders commonly used
   - define_rider: utter_define_rider
   - define_rider_performance: utter_define_rider_performance
   - define_rider_hospitality: utter_define_rider_hospitality
   - define_rider_technical: utter_define_rider_technical
 
-# different types of royalties
+### different types of royalties
   - define_royalty: utter_define_royalty
   - define_royalty_blackbox: utter_define_royalty_blackbox
   - define_royalty_free: utter_define_royalty_free
   - define_royalty_mechanical: utter_define_royalty_mechanical
   - define_royalty_streaming: utter_define_royalty_streaming
     
-# standard rates received or taken
+### standard rates received or taken
   - define_rate_statutorymechanical: utter_define_rate_statutorymechanical
   - define_rate_netartist: utter_define_rate_netartist
 
-# organizations to be aware of/ registered with
+### organizations to be aware of/ registered with
   - define_copyrightroyaltyboard: utter_define_copyrightroyaltyboard
   - define_harryfoxagency: utter_define_harryfoxagency
   - define_riaa: utter_define_riaa
@@ -139,8 +140,10 @@ intents:
   - define_pro_ascap: utter_define_pro_ascap
   - define_pro_bmi: utter_define_pro_bmi
   - define_pro_sesac: utter_define_pro_sesac
-  
-  responses:
+    
+    
+
+responses:
   utter_greet:
   - text: "Hey! What can I help ya with today?"
 
@@ -255,6 +258,7 @@ intents:
   utter_clarify:
   - text: "Would you mind rephrasing that?"
   
+
 
 
 # KNOWLEDGE BASE
